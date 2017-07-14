@@ -1,0 +1,71 @@
+</div>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/essential-plugins.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/pace.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/chart.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/jquery.vmap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/jquery.vmap.world.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/jquery.vmap.sampledata.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript">$('#sampleTable').DataTable( {
+        "lengthMenu": [[2, 10, 25, -1], [2, 10, 25, "All"]]
+    } );</script>
+	
+	<script>
+		function hitung2() {
+		var a = $(".a2").val();
+		var b = $(".b2").val();
+		c = a * b; //a kali b
+		$(".c2").val(c);
+		}
+		function isNumberKey(evt){
+		var charCode = (evt.which) ? evt.which : event.keyCode;
+		if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57))
+		return false;
+		return true;
+		}
+	</script>
+	<script>
+	function hitung3() {
+    var x = $(".x2").val();
+    var y = $(".y2").val();
+    z = x - y; 
+    $(".z2").val(z);
+	}
+	</script>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript">
+      $('#sl').click(function(){
+      	$('#tl').loadingBtn();
+      	$('#tb').loadingBtn({ text : "Signing In"});
+      });
+      
+      $('#el').click(function(){
+      	$('#tl').loadingBtnComplete();
+      	$('#tb').loadingBtnComplete({ html : "Sign In"});
+      });
+      
+      $('#demoDate').datepicker({
+      	format: "yyyy-mm-dd",
+      	autoclose: true,
+      	todayHighlight: true
+      });
+      
+      $('#demoSelect').select2();
+    </script>
+	<script type="text/javascript">
+	$('#demoDate2').datepicker({
+      	format: "yyyy-mm-dd",
+      	autoclose: true,
+      	todayHighlight: true
+      });
+	 </script> 
+  </body>
+</html>  
